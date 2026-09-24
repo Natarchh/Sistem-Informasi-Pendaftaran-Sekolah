@@ -1,6 +1,4 @@
 # SISTEM INFORMASI PENDAFTARAN SEKOLAH
-Rekayasa Perangkat Lunak Kelompok 5
-Berikut adalah draf deskripsi bergaya *README* GitHub yang diadaptasi dari struktur gambar (*screenshot*) Anda, menggunakan data dan informasi dari dokumen SRS PPDB:
 
 ---
 
