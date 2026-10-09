@@ -93,7 +93,7 @@
           </mxGeometry>
         </mxCell>
         <UserObject label="" plantUmlId="actor_12" plantUmlBaseStyle="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;" plantUmlBaseValue="" id="BK8F9iCU-OLP2NA2XcDy-18">
-          <mxCell parent="BK8F9iCU-OLP2NA2XcDy-5" style="shape=umlActor;html=1;fillColor=#B3FF66;strokeColor=#D0CEE2;fontColor=#1A1A1A;fontSize=14;rounded=0;labelBackgroundColor=none;" vertex="1">
+          <mxCell parent="BK8F9iCU-OLP2NA2XcDy-5" style="shape=umlActor;html=1;fillColor=#6666FF;strokeColor=#D0CEE2;fontColor=#1A1A1A;fontSize=14;rounded=0;labelBackgroundColor=none;" vertex="1">
             <mxGeometry height="60" width="40" x="110" y="686" as="geometry" />
           </mxCell>
         </UserObject>
