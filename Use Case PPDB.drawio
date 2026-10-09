@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="YfmArxufpEjlweLMD0E8">
-    <mxGraphModel dx="593" dy="895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+    <mxGraphModel dx="706" dy="1065" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -45,7 +45,7 @@
           </mxCell>
         </UserObject>
         <UserObject label="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;Login&lt;/span&gt;" plantUmlId="uc_7" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" plantUmlBaseValue="Login Multi-Peran" id="BK8F9iCU-OLP2NA2XcDy-13">
-          <mxCell parent="BK8F9iCU-OLP2NA2XcDy-6" style="ellipse;html=1;fillColor=light-dark(#FAD9D5,#99FFFF);strokeColor=light-dark(#D0CEE2,#006666);whiteSpace=wrap;fontColor=#1A1A1A;fontSize=14;rounded=0;labelBackgroundColor=none;" vertex="1">
+          <mxCell parent="BK8F9iCU-OLP2NA2XcDy-6" style="ellipse;html=1;fillColor=light-dark(#FF99CC,#99FFFF);strokeColor=light-dark(#99004D,#006666);whiteSpace=wrap;fontColor=#1A1A1A;fontSize=14;rounded=0;labelBackgroundColor=none;" vertex="1">
             <mxGeometry height="36" width="158" x="293.5" y="477.5" as="geometry" />
           </mxCell>
         </UserObject>
@@ -93,7 +93,7 @@
           </mxGeometry>
         </mxCell>
         <UserObject label="" plantUmlId="actor_12" plantUmlBaseStyle="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;" plantUmlBaseValue="" id="BK8F9iCU-OLP2NA2XcDy-18">
-          <mxCell parent="BK8F9iCU-OLP2NA2XcDy-5" style="shape=umlActor;html=1;fillColor=none;strokeColor=#D0CEE2;fontColor=#1A1A1A;fontSize=14;rounded=0;labelBackgroundColor=none;" vertex="1">
+          <mxCell parent="BK8F9iCU-OLP2NA2XcDy-5" style="shape=umlActor;html=1;fillColor=#B3FF66;strokeColor=#D0CEE2;fontColor=#1A1A1A;fontSize=14;rounded=0;labelBackgroundColor=none;" vertex="1">
             <mxGeometry height="60" width="40" x="110" y="686" as="geometry" />
           </mxCell>
         </UserObject>
@@ -103,7 +103,7 @@
           </mxCell>
         </UserObject>
         <UserObject label="" plantUmlId="actor_14" plantUmlBaseStyle="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;" plantUmlBaseValue="" id="BK8F9iCU-OLP2NA2XcDy-20">
-          <mxCell parent="BK8F9iCU-OLP2NA2XcDy-5" style="shape=umlActor;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;fontColor=#1A1A1A;fontSize=14;rounded=0;labelBackgroundColor=none;" vertex="1">
+          <mxCell parent="BK8F9iCU-OLP2NA2XcDy-5" style="shape=umlActor;html=1;fillColor=#FFFF66;strokeColor=#D0CEE2;fontColor=#1A1A1A;fontSize=14;rounded=0;labelBackgroundColor=none;" vertex="1">
             <mxGeometry height="60" width="40" x="1009.5" y="604" as="geometry" />
           </mxCell>
         </UserObject>
@@ -113,7 +113,7 @@
           </mxCell>
         </UserObject>
         <UserObject label="" plantUmlId="actor_16" plantUmlBaseStyle="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;" plantUmlBaseValue="" id="BK8F9iCU-OLP2NA2XcDy-22">
-          <mxCell parent="BK8F9iCU-OLP2NA2XcDy-5" style="shape=umlActor;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;fontColor=#1A1A1A;fontSize=14;rounded=0;labelBackgroundColor=none;" vertex="1">
+          <mxCell parent="BK8F9iCU-OLP2NA2XcDy-5" style="shape=umlActor;html=1;fillColor=#FF6666;strokeColor=#D0CEE2;fontColor=#1A1A1A;fontSize=14;rounded=0;labelBackgroundColor=none;" vertex="1">
             <mxGeometry height="60" width="40" x="1009.5" y="885.5" as="geometry" />
           </mxCell>
         </UserObject>
