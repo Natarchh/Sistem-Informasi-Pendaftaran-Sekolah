@@ -1,0 +1,130 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Qp3UOqc4RA8LZuWRXJT0">
+    <mxGraphModel dx="2181" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\n!theme plain\nskinparam node {\n    BackgroundColor LightSkyBlue\n    BorderColor Black\n}\n\nnode \&quot;&lt;&lt;device&gt;&gt;\\nClient Device\\n(PC/Laptop/Smartphone)\&quot; as client {\n    node \&quot;&lt;&lt;executionEnvironment&gt;&gt;\\nWeb Browser\\n(Chrome, Firefox, Edge)\&quot; as browser {\n    }\n}\n\nnode \&quot;&lt;&lt;device&gt;&gt;\\nApplication Server\\n(Ubuntu Server 22.04 LTS)\&quot; as app_server {\n    node \&quot;&lt;&lt;executionEnvironment&gt;&gt;\\nWeb Server\\n(Nginx / Apache)\&quot; as web {\n    }\n    node \&quot;&lt;&lt;executionEnvironment&gt;&gt;\\nApplication Runtime\\n(PHP 8.2+ / Node.js)\&quot; as runtime {\n        artifact \&quot;&lt;&lt;artifact&gt;&gt;\\nSistem_PPDB.php\&quot; as app\n    }\n    web ..&gt; runtime : &lt;&lt;delegate&gt;&gt;\n}\n\nnode \&quot;&lt;&lt;device&gt;&gt;\\nDatabase Server\&quot; as db_server {\n    node \&quot;&lt;&lt;executionEnvironment&gt;&gt;\\nDBMS\\n(MySQL 8.0 / PostgreSQL 15)\&quot; as db_env {\n        artifact \&quot;&lt;&lt;artifact&gt;&gt;\\ndb_ppdb.sql\&quot; as db\n    }\n}\n\nnode \&quot;&lt;&lt;device&gt;&gt;\\nStorage Server\&quot; as storage_server {\n    node \&quot;&lt;&lt;executionEnvironment&gt;&gt;\\nFile System API / Cloud\&quot; as fs_env {\n        artifact \&quot;&lt;&lt;artifact&gt;&gt;\\nberkas_pendaftar.pdf\\n(Max 2MB)\&quot; as file\n    }\n}\n\nbrowser &lt;--&gt; web : &lt;&lt;HTTPS (TLS 1.3)&gt;&gt;\nruntime &lt;--&gt; db_env : &lt;&lt;TCP/IP&gt;&gt;\nruntime &lt;--&gt; fs_env : &lt;&lt;File System API&gt;&gt;\n\n@enduml\n&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="SEsvbB0oRdhfN16Kpntv-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«device»&#xa;Client Device&#xa;(PC/Laptop/Smartphone)" plantUmlId="c_0" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«device»&#xa;Client Device&#xa;(PC/Laptop/Smartphone)" id="SEsvbB0oRdhfN16Kpntv-2">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-1" style="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="148" width="245.16" x="-690" y="500" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«executionEnvironment»&#xa;Web Browser&#xa;(Chrome, Firefox, Edge)" plantUmlId="n_1" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«executionEnvironment»&#xa;Web Browser&#xa;(Chrome, Firefox, Edge)" id="SEsvbB0oRdhfN16Kpntv-3">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-2" style="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="62" width="201" x="17" y="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«device»&#xa;Application Server&#xa;(Ubuntu Server 22.04 LTS)" plantUmlId="c_2" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«device»&#xa;Application Server&#xa;(Ubuntu Server 22.04 LTS)" id="SEsvbB0oRdhfN16Kpntv-4">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-1" style="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="342" width="301.54" x="-180" y="397" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«executionEnvironment»&#xa;Application Runtime&#xa;(PHP 8.2+ / Node.js)" plantUmlId="c_3" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«executionEnvironment»&#xa;Application Runtime&#xa;(PHP 8.2+ / Node.js)" id="SEsvbB0oRdhfN16Kpntv-5">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-4" style="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="132" width="261.54" x="15" y="194" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«artifact»&#xa;Sistem_PPDB.php" plantUmlId="n_4" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=5;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=2;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«artifact»&#xa;Sistem_PPDB.php" id="SEsvbB0oRdhfN16Kpntv-6">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-5" style="rounded=1;absoluteArcSize=1;arcSize=5;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=2;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="46" width="140" x="56" y="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_5" plantUmlBaseStyle="shape=note;size=6;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;part=1;shadow=0;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="" id="SEsvbB0oRdhfN16Kpntv-7">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-6" style="shape=note;size=6;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;part=1;shadow=0;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="14" relative="1" width="12" x="1" as="geometry">
+              <mxPoint x="-17" y="5" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="«executionEnvironment»&#xa;Web Server&#xa;(Nginx / Apache)" plantUmlId="n_6" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«executionEnvironment»&#xa;Web Server&#xa;(Nginx / Apache)" id="SEsvbB0oRdhfN16Kpntv-8">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-4" style="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="62" width="201" x="36.21" y="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«delegate»" plantUmlId="e_15" plantUmlBaseStyle="strokeColor=#000000;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=classicThin;endFill=1;dashed=1;dashPattern=7 7;strokeWidth=1;fontFamily=Verdana;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«delegate»" id="SEsvbB0oRdhfN16Kpntv-17">
+          <mxCell edge="1" parent="SEsvbB0oRdhfN16Kpntv-4" source="SEsvbB0oRdhfN16Kpntv-8" style="strokeColor=#000000;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=classicThin;endFill=1;dashed=1;dashPattern=7 7;strokeWidth=1;fontFamily=Verdana;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="SEsvbB0oRdhfN16Kpntv-5">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="48" y="3" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="«device»&#xa;Database Server" plantUmlId="c_7" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«device»&#xa;Database Server" id="SEsvbB0oRdhfN16Kpntv-9">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-1" style="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="203" width="310.99" x="277" y="180" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«executionEnvironment»&#xa;DBMS&#xa;(MySQL 8.0 / PostgreSQL 15)" plantUmlId="c_8" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«executionEnvironment»&#xa;DBMS&#xa;(MySQL 8.0 / PostgreSQL 15)" id="SEsvbB0oRdhfN16Kpntv-10">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-9" style="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="132" width="270.985" x="15" y="55" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«artifact»&#xa;db_ppdb.sql" plantUmlId="n_9" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=5;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=2;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«artifact»&#xa;db_ppdb.sql" id="SEsvbB0oRdhfN16Kpntv-11">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-10" style="rounded=1;absoluteArcSize=1;arcSize=5;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=2;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="46" width="109" x="76" y="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_10" plantUmlBaseStyle="shape=note;size=6;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;part=1;shadow=0;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="" id="SEsvbB0oRdhfN16Kpntv-12">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-11" style="shape=note;size=6;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;part=1;shadow=0;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="14" relative="1" width="12" x="1" as="geometry">
+              <mxPoint x="-17" y="5" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="«device»&#xa;Storage Server" plantUmlId="c_11" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«device»&#xa;Storage Server" id="SEsvbB0oRdhfN16Kpntv-13">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-1" style="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="204" width="301.54" x="281.72" y="760" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«executionEnvironment»&#xa;File System API / Cloud" plantUmlId="c_12" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«executionEnvironment»&#xa;File System API / Cloud" id="SEsvbB0oRdhfN16Kpntv-14">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-13" style="shape=cube;size=10;flipH=1;fillColor=#87CEFA;strokeColor=#000000;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="133" width="261.535" x="15" y="55" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«artifact»&#xa;berkas_pendaftar.pdf&#xa;(Max 2MB)" plantUmlId="n_13" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=5;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=2;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="«artifact»&#xa;berkas_pendaftar.pdf&#xa;(Max 2MB)" id="SEsvbB0oRdhfN16Kpntv-15">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-14" style="rounded=1;absoluteArcSize=1;arcSize=5;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=2;shadow=0;strokeWidth=1;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="62" width="172" x="40" y="55" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_14" plantUmlBaseStyle="shape=note;size=6;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;part=1;shadow=0;fontColor=#000000;fontFamily=Verdana;" plantUmlBaseValue="" id="SEsvbB0oRdhfN16Kpntv-16">
+          <mxCell parent="SEsvbB0oRdhfN16Kpntv-15" style="shape=note;size=6;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;part=1;shadow=0;fontColor=#000000;fontFamily=Verdana;" vertex="1">
+            <mxGeometry height="14" relative="1" width="12" x="1" as="geometry">
+              <mxPoint x="-17" y="5" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="SEsvbB0oRdhfN16Kpntv-24" edge="1" parent="SEsvbB0oRdhfN16Kpntv-1" source="SEsvbB0oRdhfN16Kpntv-2" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;exitX=0;exitY=0.5;exitDx=0;exitDy=-5;exitPerimeter=0;" target="SEsvbB0oRdhfN16Kpntv-4" value="&lt;span style=&quot;font-family: Verdana; font-size: 13px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;«HTTPS (TLS 1.3)»&lt;/span&gt;">
+          <mxGeometry relative="1" width="80" x="-0.0572" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-312.41999999999985" y="569" />
+            </Array>
+            <mxPoint x="-453" y="585" as="sourcePoint" />
+            <mxPoint x="-373" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SEsvbB0oRdhfN16Kpntv-27" edge="1" parent="SEsvbB0oRdhfN16Kpntv-1" source="SEsvbB0oRdhfN16Kpntv-4" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;rounded=0;defaultLabelBackgroundColor=page;entryX=1;entryY=0.5;entryDx=0;entryDy=5;entryPerimeter=0;" target="SEsvbB0oRdhfN16Kpntv-9" value="&lt;span style=&quot;font-family: Verdana; font-size: 13px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;«TCP/IP»&lt;/span&gt;">
+          <mxGeometry relative="1" width="80" x="-0.0128" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="199.26999999999975" y="286.5" />
+            </Array>
+            <mxPoint x="121.54" y="568" as="sourcePoint" />
+            <mxPoint x="201.54" y="568" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SEsvbB0oRdhfN16Kpntv-28" edge="1" parent="SEsvbB0oRdhfN16Kpntv-1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;rounded=0;defaultLabelBackgroundColor=page;entryX=1;entryY=0.5;entryDx=0;entryDy=5;entryPerimeter=0;" target="SEsvbB0oRdhfN16Kpntv-13" value="&lt;span style=&quot;font-family: Verdana; font-size: 13px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;«File System API»&lt;/span&gt;">
+          <mxGeometry relative="1" width="80" x="0.088" y="3" as="geometry">
+            <mxPoint x="-1" as="offset" />
+            <mxPoint x="120" y="690" as="sourcePoint" />
+            <mxPoint x="200" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
