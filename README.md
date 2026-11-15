@@ -1,8 +1,8 @@
 # SISTEM INFORMASI PENDAFTARAN SEKOLAH
 
 ---
-# UI/UX : https://www.figma.com/design/L7sm22vKV4WPPTpzdFIYhD/UI-PPDB-PROTOTIPE?timeline=keyframe&node-id=0-1&p=f&t=SEVK8VVmzH5bes6P-0
-
+# UI/UX : 
+https://www.figma.com/design/L7sm22vKV4WPPTpzdFIYhD/UI-PPDB-PROTOTIPE?timeline=keyframe&node-id=0-1&p=f&t=SEVK8VVmzH5bes6P-0
 
 # Sistem-Informasi-PPDB-Tugas-Kelompok-RPL
 
